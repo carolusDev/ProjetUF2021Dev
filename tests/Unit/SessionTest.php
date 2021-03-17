@@ -21,7 +21,8 @@ class SessionTest extends TestCase
         $this->assertTrue(
             Schema::hasColumns('sessions',
                 [
-                    "id", "name", "start_date", "end_date","dotation"
+                    "id", "name", "start_date", "end_date","dotation",
+                    "created_at","updated_at"
                 ]
             ), 1
         );
@@ -39,7 +40,7 @@ class SessionTest extends TestCase
     }
 
     /**
-     * Vérifie qu'un utilisateur peut être supprimé de la base de données
+     * Vérifie qu'une session peut être supprimée de la base de données
      * sans échec
      *
      * @depends testSessionIsSavedInDatabase

@@ -21,7 +21,8 @@ class TeamTest extends TestCase
             Schema::hasColumns('teams',
                 [
                     "id", "name", "points", "money_left", "video", "picture",
-                    "text", "session_id"
+                    "text", "session_id",
+                    "created_at","updated_at"
                 ]
             ), 1
         );

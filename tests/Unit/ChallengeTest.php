@@ -22,7 +22,8 @@ class ChallengeTest extends TestCase
         $this->assertTrue(
             Schema::hasColumns('users',
                 [
-                    "id", "title", "description", "value","session_id"
+                    "id", "title", "description", "value", "session_id",
+                    "created_at","updated_at"
                 ]
             ), 1
         );
@@ -40,7 +41,7 @@ class ChallengeTest extends TestCase
     }
 
     /**
-     * Vérifie qu'un utilisateur peut être supprimé de la base de données
+     * Vérifie qu'un challenge peut être supprimé de la base de données
      * sans échec
      *
      * @depends testChallengeIsSavedInDatabase
