@@ -2,10 +2,10 @@
 
 namespace Tests\Unit;
 
+
 use Illuminate\Support\Facades\Schema;
 use PHPUnit\Framework\TestCase;
-use App\Models;
-
+use App\Models\{User, Team, Session};
 class TeamTest extends TestCase
 {
     /**

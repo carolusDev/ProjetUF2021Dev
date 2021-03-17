@@ -5,6 +5,7 @@ namespace Tests\Unit;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Schema;
 use PHPUnit\Framework\TestCase;
+use App\Models\{User, Team, Session, Challenge};
 
 class ChallengeTest extends TestCase
 {

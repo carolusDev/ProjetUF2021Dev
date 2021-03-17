@@ -5,6 +5,7 @@ namespace Tests\Unit;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Schema;
 use PHPUnit\Framework\TestCase;
+use App\Models\{User, Team, Session, Challenge};
 
 class SessionTest extends TestCase
 { use RefreshDatabase;
@@ -49,7 +50,7 @@ class SessionTest extends TestCase
     public function testSessionIsDeletedFromDatabase()
     {
         $session = Session::factory()->create();
-        $chall = Session::factory()->create(["session_id" => $session->id]);
+        $chall = Challenge::factory()->create(["session_id" => $session->id]);
 
         $chall->delete();
         $this->assertDeleted($chall);
