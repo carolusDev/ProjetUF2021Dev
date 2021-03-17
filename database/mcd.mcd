@@ -1,0 +1,14 @@
+CHALLENGE: id, title, description, value
+:
+CHALLENGE TEAM, 0N CHALLENGE, 0N TEAM
+:
+
+IS IN, 11 CHALLENGE, 0N SESSION
+::
+USER: int, name, firstname, birthdate, civility, password, country, zipcode, city, phone, email, status, team
+
+
+SESSION: id, name, start_date, end_date, dotation
+IS AlSO IN, 11 TEAM, 0N SESSION
+TEAM: id, name, points, money_left, video, picture, text
+BELONGS TO, 01 USER, 0N TEAM
