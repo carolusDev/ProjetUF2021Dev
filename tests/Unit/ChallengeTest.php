@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Unit;
+namespace tests\Unit;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Schema;
@@ -24,7 +24,7 @@ class ChallengeTest extends TestCase
             Schema::hasColumns('challenges',
                 [
                     "id", "title", "description", "value", "session_id",
-                    "created_at","updated_at"
+                    "created_at", "updated_at"
                 ]
             ), 1
         );
@@ -55,6 +55,13 @@ class ChallengeTest extends TestCase
 
         $chall->delete();
         $this->assertDeleted($chall);
+    }
+
+    public function testChallengeTableThrowsIntegrityConstraintExceptionOnNonExistingSessionId()
+    {
+        $this->expectException("Illuminate\Database\QueryException");
+        $this->expectExceptionCode(23000);
+        Challenge::factory()->create(['session_id' => 0]);
     }
 
 }

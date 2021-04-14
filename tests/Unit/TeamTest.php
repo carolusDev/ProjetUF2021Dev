@@ -27,7 +27,6 @@ class TeamTest extends TestCase
             ), 1
         );
     }
-
     /**
      * Vérifie que le modèle est sauvegardé dans la base de données
      *
@@ -53,5 +52,12 @@ class TeamTest extends TestCase
 
         $team->delete();
         $this->assertDeleted($team);
+    }
+
+    public function testTeamTableThrowsIntegrityConstraintOnNonExistingSessionId(){
+
+        $this->expectException("Illuminate\Database\QueryException");
+        $this->expectExceptionCode(23000);
+        Team::factory()->create(['session_id' => 0]);
     }
 }
