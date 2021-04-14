@@ -15,12 +15,13 @@ class CreateTeamsTable extends Migration
     {
         Schema::create('teams', function (Blueprint $table) {
             $table->id();
-            $table->string("TeamName", 250);
-            $table->double("TeamPoints");
-            $table->double("TeamMoneyLeft");
-            $table->binary("TeamVideo");
-            $table->binary("TeamPicture");
-            $table->string("TeamText");
+            $table->string("name", 50);
+            $table->double("points");
+            $table->double("money_left");
+            $table->binary("video");
+            $table->binary("picture");
+            $table->string("decription");
+            $table->foreignId("session_id")->constrained()->onDelete('cascade');
             $table->timestamps();
         });
     }

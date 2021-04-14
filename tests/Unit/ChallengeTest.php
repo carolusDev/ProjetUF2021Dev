@@ -21,7 +21,7 @@ class ChallengeTest extends TestCase
     public function testChallengeTableHasExpectedColumns()
     {
         $this->assertTrue(
-            Schema::hasColumns('users',
+            Schema::hasColumns('challenges',
                 [
                     "id", "title", "description", "value", "session_id",
                     "created_at","updated_at"

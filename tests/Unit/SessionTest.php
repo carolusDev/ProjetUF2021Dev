@@ -52,8 +52,8 @@ class SessionTest extends TestCase
         $session = Session::factory()->create();
         $chall = Challenge::factory()->create(["session_id" => $session->id]);
 
-        $chall->delete();
-        $this->assertDeleted($chall);
+        $session->delete();
+        $this->assertDeleted($session);
     }
 
 }

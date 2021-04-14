@@ -23,8 +23,8 @@ class UserTest extends TestCase
         $this->assertTrue(
             Schema::hasColumns('users',
                 [
-                    "id", "name", "first_name", "birthdate", "civility", "password",
-                    "country", "zipcode", "city", "phone", "email", "status", "team_id",
+                    "id", "name", "first_name", "birthDate", "civility", "password",
+                    "country", "zipCode", "city", "phone", "email", "status", "team_id",
                     "created_at", "updated_at"
                 ]
             ), 1

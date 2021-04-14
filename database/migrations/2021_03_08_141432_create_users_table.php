@@ -15,18 +15,18 @@ class CreateUsersTable extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->string("UserName", 100);
-            $table->string("UserFname", 100);
-            $table->date("UserDateOfBirth");
-            $table->string("UserCivi", 30);
-            $table->string("UserPassWord", 250);
-            $table->string("UserCountry", 100);
-            $table->string("UserPostalCode", 50);
-            $table->string("UserCity", 100);
-            $table->string("UserPhoneNumber", 50);
-            $table->string("UserEmail", 250);
-            $table->string("UserStatus", 50);
-            $table->string("UserTeam", 250);
+            $table->string("name", 100);
+            $table->string("first_name", 100);
+            $table->date("birthDate");
+            $table->string("civility", 30);
+            $table->string("password", 250);
+            $table->string("country", 100);
+            $table->string("zipCode", 50);
+            $table->string("city", 100);
+            $table->string("phone", 50);
+            $table->string("email", 250);
+            $table->string("status", 50);
+            $table->foreignId("team_id")->nullable()->constrained()->onDelete('set null');
             $table->timestamps();
         });
     }

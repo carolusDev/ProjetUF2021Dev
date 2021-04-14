@@ -15,9 +15,10 @@ class CreateChallengesTable extends Migration
     {
         Schema::create('challenges', function (Blueprint $table) {
             $table->id();
-            $table->double('ChallengePointNumber');
-            $table->string('ChallengeTitle', 250);
-            $table->longtext('ChallengeDescription');
+            $table->string('title', 64);
+            $table->string('description');
+            $table->double('value');
+            $table->foreignId("session_id")->constrained()->onDelete('cascade');
             $table->timestamps();
         });
     }
