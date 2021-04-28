@@ -18,7 +18,7 @@ class ChallengeTest extends TestCase
         $challenge = Challenge::factory()->create(['session_id' => $session->id]);
 
         $this->assertInstanceOf(Session::class, $challenge->session);
-        $this->assertEquals(1,$challenge->session);
+        $this->assertEquals(1,$challenge->session()->count());
         $this->assertInstanceOf('\Illuminate\Database\Eloquent\Relations\BelongsTo', $challenge->session());
     }
 

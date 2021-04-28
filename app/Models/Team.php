@@ -26,4 +26,14 @@ class Team extends Authenticatable
 
     ];
 
+    public function session(){
+        return $this->belongsTo(Session::class);
+    }
+    public function users(){
+        return $this->hasMany(User::class);
+    }
+    public function challenges(){
+        return $this->belongsToMany(Challenge::class);
+    }
+
 }

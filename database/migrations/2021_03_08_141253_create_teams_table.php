@@ -20,7 +20,7 @@ class CreateTeamsTable extends Migration
             $table->double("money_left");
             $table->binary("video");
             $table->binary("picture");
-            $table->string("decription");
+            $table->string("description");
             $table->foreignId("session_id")->constrained()->onDelete('cascade');
             $table->timestamps();
         });

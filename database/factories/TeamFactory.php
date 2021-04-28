@@ -2,7 +2,7 @@
 
 namespace Database\Factories;
 
-use App\Models\Team;
+use App\Models\{Session, Team};
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 
@@ -20,10 +20,6 @@ class TeamFactory extends Factory
      *
      * @return array
      */
-    protected function withFaker()
-    {
-        return \Faker\Factory::create('en');
-    }
     public function definition()
     {
         return [
@@ -32,7 +28,8 @@ class TeamFactory extends Factory
             'money_left' => $this->faker->randomNumber(),
             'video' => $this->faker->randomNumber(),
             'picture' => $this->faker->randomNumber(),
-            'description' => $this->faker->text()
+            'description' => $this->faker->text(),
+            'session_id' => Session::factory()
 
             //'remember_token' => Str::random(10),
         ];

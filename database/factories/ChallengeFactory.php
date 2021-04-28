@@ -2,7 +2,7 @@
 
 namespace Database\Factories;
 
-use App\Models\Challenge;
+use App\Models\{Challenge, Session};
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class ChallengeFactory extends Factory
@@ -22,7 +22,12 @@ class ChallengeFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'title' => $this->faker->word(),
+            'description' => $this->faker->sentence(),
+            'value' => $this->faker->numberBetween(0,1200),
+            'created_at' => now(),
+            'updated_at' => now(),
+            'session_id' => Session::factory()
         ];
     }
 }
