@@ -87,12 +87,15 @@
                 <form action="/my-handling-form-page" methode="post">
                     <div class="connexionEmailContainer">
                         <label class="labelConnexion">Email :</label>
-                        <input class="connexionInput" type="email" value="Votre Email ..." required/>
+                        <input class="connexionInput" type="email" required/>
                     </br>
                     </div>
                     <div class="connexionMotDePasseContainer">
                         <label class="labelConnexion">Mot de passe :</label>
                         <input class="connexionInput" type="password" required/>
+                    </div>
+                    <div class="boutonInscriptionContainer">
+                        <input class="BoutonInscription" type="submit" value="envoyer"/>
                     </div>
                 </form>
                 <div class="connexionPhotoContainerSmartphone">
@@ -101,4 +104,86 @@
             </div>
         </div>
     </div>
+@endsection
+
+
+@section('inscription')
+<div class="ImHereForSpace"></div>
+<div class="contentContainer">
+    <div class="subContainerConnexion">
+        <div class="connexionPhotoContainer">
+            <img class="connexionPicture" src="img/pexels-lalu-fatoni-732632.jpg" alt="on the road a game connexion picture"/>
+        </div>
+        <div class="inputInscriptionContainer">
+            <form action="/my-handling-form-page" methode="post">
+                <div class="connexionEmailContainer">
+                    <label class="labelConnexion">Prénom :</label>
+                    <input class="connexionInput" type="email" required/>
+                </div>
+            </br>
+                <div class="connexionMotDePasseContainer">
+                    <label class="labelConnexion">Civilité :</label>
+                    <input class="connexionInput" type="password" required/>
+                </div>
+                </br>
+                <div class="connexionMotDePasseContainer">
+                    <label class="labelConnexion">Nom :</label>
+                    <input class="connexionInput" type="password" required/>
+                </div>
+            </br>
+                <div class="connexionMotDePasseContainer">
+                    <label class="labelConnexion">Mot de passe :</label>
+                    <input class="connexionInput" type="password" required/>
+                </div>
+            </br>
+                <div class="connexionMotDePasseContainer">
+                    <label class="labelConnexion">Confirmez mot de passe :</label>
+                    <input class="connexionInput" type="password" required/>
+                </div>
+            </br>
+                <div class="connexionMotDePasseContainer">
+                    <label class="labelConnexion">Date de naissance :</label>
+                    <input class="connexionInput" type="password" required/>
+                </div>
+            </br>
+                <div class="connexionMotDePasseContainer">
+                    <label class="labelConnexion">Pays :</label>
+                    <input class="connexionInput" type="password" required/>
+                </div>
+            </br>
+                <div class="connexionMotDePasseContainer">
+                    <label class="labelConnexion">Code postal :</label>
+                    <input class="connexionInput" type="password" required/>
+                </div>
+            </br>
+                <div class="connexionMotDePasseContainer">
+                    <label class="labelConnexion">Ville :</label>
+                    <input class="connexionInput" type="password" required/>
+                </div>
+            </br>
+                <div class="connexionMotDePasseContainer">
+                    <label class="labelConnexion">Numéro de téléphone :</label>
+                    <input class="connexionInput" type="password" required/>
+                </div>
+            </br>
+                <div class="connexionMotDePasseContainer">
+                    <label class="labelConnexion">Adresse email :</label>
+                    <input class="connexionInput" type="password" required/>
+                </div>
+            </br>
+                <div class="connexionMotDePasseContainer">
+                    <label class="labelConnexion">Confirmez email :</label>
+                    <input class="connexionInput" type="password" required/>
+                </div>
+            </br>
+            <div class="boutonInscriptionContainer">
+                <input class="BoutonInscription" type="submit" value="envoyer"/>
+            </div>
+            </form>
+            <div class="connexionPhotoContainerSmartphone">
+                <img class="connexionPictureSmartphone" src="img/pexels-janiere-fernandez-2829336.jpg" alt="on the road a game connexion picture"/>
+            </div>
+        </div>
+    </div>
+</div>
 @endsection

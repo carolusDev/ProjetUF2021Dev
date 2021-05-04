@@ -26,7 +26,7 @@
     </label>
 </nav>
 
-@yield('connexion')
+@yield('inscription')
 
 <footer class="footer">
     <div class="container">
