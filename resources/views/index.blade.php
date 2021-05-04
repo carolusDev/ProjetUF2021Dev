@@ -26,7 +26,7 @@
     </label>
 </nav>
 
-@yield('actualites')
+@yield('connexion')
 
 <footer class="footer">
     <div class="container">

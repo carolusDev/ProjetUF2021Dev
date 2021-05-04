@@ -224,21 +224,76 @@ nav .icon-burger .line
     flex-wrap: wrap;
     width: 100%;
 }
-.positionClassement
-{
 
+.connexionPhotoContainerSmartphone
+{
+    display: none;
 }
-.teamNameClassement
+.subContainerConnexion
 {
-
+    width: 100%;
+    margin: 3%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
 }
-.pointsClassement
+.connexionPicture
 {
-
+    max-width: 500px;
+    width: 100%;
+    margin-left: 0;
+    border-radius: 0.5em;
 }
-.moneyLeftClassement
+.inputConnexionContainer
 {
-
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding: 25% 5% 5% 5%;
+}
+.labelConnexion
+{
+    display: block;
+    width: 150px;
+    float: left;
+    margin-bottom: 2%;
+}
+.connexionInput
+{
+    margin-bottom: 2%;
+    background-color: rgb(230,230,230);
+    border-radius: 0.1em;
+    border: solid rgb(255,69,0) 1px;
+    width: 250px;
+    height: 25px;
+}
+@media all and (max-width: 530px)
+{
+    .connexionPhotoContainerSmartphone
+    {
+        display: flex;
+    }
+    .connexionPicture
+    {
+        display: none;
+    }
+    .inputConnexionContainer
+    {
+        padding: 3%;
+    }
+    .subContainerConnexion
+    {
+        margin-top: 0;
+        padding: 1%;
+    }
+    .connexionPictureSmartphone
+    {
+        max-width: 500px;
+        width: 100%;
+        margin-left: 0;
+        border-radius: 0.5em;   
+    }
 }
 
 

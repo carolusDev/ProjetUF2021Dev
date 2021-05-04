@@ -73,3 +73,32 @@
     </div>
 </div>
 @endsection
+
+
+
+@section('connexion')
+    <div class="ImHereForSpace"></div>
+    <div class="contentContainer">
+        <div class="subContainerConnexion">
+            <div class="connexionPhotoContainer">
+                <img class="connexionPicture" src="img/pexels-janiere-fernandez-2829336.jpg" alt="on the road a game connexion picture"/>
+            </div>
+            <div class="inputConnexionContainer">
+                <form action="/my-handling-form-page" methode="post">
+                    <div class="connexionEmailContainer">
+                        <label class="labelConnexion">Email :</label>
+                        <input class="connexionInput" type="email" value="Votre Email ..." required/>
+                    </br>
+                    </div>
+                    <div class="connexionMotDePasseContainer">
+                        <label class="labelConnexion">Mot de passe :</label>
+                        <input class="connexionInput" type="password" required/>
+                    </div>
+                </form>
+                <div class="connexionPhotoContainerSmartphone">
+                    <img class="connexionPictureSmartphone" src="img/pexels-janiere-fernandez-2829336.jpg" alt="on the road a game connexion picture"/>
+                </div>
+            </div>
+        </div>
+    </div>
+@endsection
