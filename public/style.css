@@ -151,6 +151,7 @@ nav .icon-burger .line
 }
 
 
+
 /* container */
 .ImHereForSpace
 {
@@ -192,9 +193,58 @@ nav .icon-burger .line
 
 
 
+/* app Page */
+.subContainerArticle
+{
+    text-align: justify;
+    margin: 2%;
+    max-width: 1000px;
+}
+.textContainerArticle
+{
+    margin-bottom: 2%;
+}
+.hrTextArticle
+{
+    background-color: rgb(255,69,0);
+    padding: 1px;
+    margin: 2% 0% 2% auto;
+}
+
+.subContainerClassement
+{
+    width: 100%;
+    margin: 5%;
+    padding: 3%;
+    border: solid rgb(255,69,0) 1px;
+    border-radius: 0.1em;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.positionClassement
+{
+
+}
+.teamNameClassement
+{
+
+}
+.pointsClassement
+{
+
+}
+.moneyLeftClassement
+{
+
+}
+
+
+
+
 /* footer */
-
-
 .row
 {
     display: flex;

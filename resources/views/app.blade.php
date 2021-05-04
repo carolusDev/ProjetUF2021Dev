@@ -1,73 +1,75 @@
-<!DOCTYPE html>
-<html lang="fr">
+@extends('index')
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-    <link rel="icon" href="img/Image1.png" />
-    <title>OTRAG</title>
-    <link href="{{ asset('style.css') }}" rel="stylesheet">
-</head>
-
-<body>
-<nav>
-    <input id="nav-toggle" type="checkbox">
-    <div class="logo"><strong>OTRAG</strong></div>
-    <ul class="links">
-        <li><a href="#actualites">Actualités</a></li>
-        <li><a href="#classementGeneral">Classement général</a></li>
-        <li><a href="#meConnecter">Me connecter</a></li>
-        <li><a href="#participerAlAventure">Participer à l'Aventure</a></li>
-    </ul>
-    <label for="nav-toggle" class="icon-burger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-    </label>
-</nav>
-
-@yield('content')
-
-<footer class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="footer-col">
-                <h4>Liens</h4>
-                <ul>
-                    <li><a href="#">Actualités</a></li>
-                    <li><a href="#">Classement général</a></li>
-                    <li><a href="#">Me connecter</a></li>
-                    <li><a href="#">Participer à l'aventure</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Informatons légales</h4>
-                <ul>
-                    <li><a href="#">Conditions particulières de vente</a></li>
-                    <li><a href="#">Mentions légales</a></li>
-                    <li><a href="#">Protection de la vie privée</a></li>
-                    <li><a href="#">Information sur les cookies</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>La société</h4>
-                <ul>
-                    <li><a href="#">2021 JMB Voyages</a></li>
-                    <li><a href="#">10 rue Alexandre III 21000 Dijon</a></li>
-                    <li><a href="#">Tel : 03 80 44 91 00</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Nos réseaux</h4>
-                <div class="social-links">
-                    <a href="#"><img src="img/facebook_108044.png" alt="facebook icone"/></a>
-                    <a href="#"><img src="img/instagram_108043.png" alt="instagram icone"/></a>
-                    <a href="#"><img src="img/youtube_108041.png" alt="youtube icone"/></a>
-                </div>
-            </div>
-        </div>
+@section('homePage')    
+<div class="ImHereForSpace"></div>
+<div class="contentContainer">
+    <div class="subContentContainer">
+        <h2 class="titlePresentation" >Présentation de l'entreprise</h2>
+        <hr class="subTitlePresentation" ></hr>
+        <p class="textPresentation">Depuis plus de 7 ans, On The Road A Game organise des voyages qui mêlent mystères, jeux, 
+            aventures et surtout rencontres humaines et culturelles. 
+            Le concept unique de On The Road A Game permet à ses participants de revenir aux origines 
+            du voyage : la découverte des autres.
+            Lorsqu’un voyageur se lance dans une session de On The Road a Game, il ne sait pas où il va. 
+            Aucune préparation ou anticipation possible. Il en sait juste assez pour savoir quel type de 
+            vêtements emporter dans son sac à dos…
+            Il s’agit donc d’un véritable voyage-mystère, couplé à un jeu entre équipes qui vient 
+            pimenter cette expérience hors du commun.</p>
     </div>
-</footer>
-</body>
+    <div class="subContentContainer">
+        <img class="presentationPicture" src="img/OTR-Entete.jpg" alt="on the road a game main picture"/>
+    </div>
+    <div class="subContentContainer">
+        <img class="presentationPicture" src="img/122217956_3437454263004745_427985025325149256_n.jpg" alt="key on wood table"/>
+    </div>
+    <div class="subContentContainer">
+        <h2 class="titlePresentation">Présentation de l'entreprise</h2>
+        <hr class="subTitlePresentation" ></hr>
+        <p class="textPresentation">On participe à On The Road a Game en équipe de 2 personnes, il n’y a pas d’élimination. 
+            Toutes les équipes sont assurées d’aller au bout de l’aventure et donc d’en profiter au 
+            maximum.
+            L’équipe gagnante est déterminée sur la base de défis à relever et d’un budget à (ne pas)
+            dépenser.
+            Au départ du jeu, une série de défis est proposée aux équipes. Le nombre de points
+            attribués dépend de la difficulté du défi. A elles, donc, de trouver le juste équilibre entre le
+            nombre et le degré de difficulté des défis qu’elles pensent pouvoir relever.
+            A cela, s’ajoute une gestion budgétaire. 
+            Chaque équipe démarre le jeu avec une enveloppe limitée. Et chaque Euro ramené à 
+            l’arrivée permet de décrocher des points bonus.
+            La somme excédentaire totale récoltée à l’issue du jeu est reversée à une association
+            caritative, choisie par l’équipe gagnante.</p>
+    </div>
+</div>
+@endsection
 
-</html>
+
+
+@section('actualites')
+<div class="ImHereForSpace"></div>
+<div class="contentContainer">
+    <div class="subContainerArticle">
+        <hr class="hrTextArticle" ></hr>
+            <div class="textContainerArticle">
+                <p class="textPresentation">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean sed adipiscing diam donec adipiscing tristique. Odio morbi quis commodo odio. Amet nisl suscipit adipiscing bibendum est ultricies integer. Feugiat vivamus at augue eget arcu dictum. Eu scelerisque felis imperdiet proin fermentum leo vel orci porta. Non consectetur a erat nam at. Dui nunc mattis enim ut tellus elementum sagittis vitae. Ullamcorper morbi tincidunt ornare massa. Neque egestas congue quisque egestas. Maecenas accumsan lacus vel facilisis volutpat est velit egestas.</p>
+            </div>
+            <div class="dateContainerArticle">
+                <p>15 décembre 2020 à 18h07</p>
+            </div>
+        <hr class="hrTextArticle" ></hr>
+    </div>
+</div>
+@endsection
+
+
+
+@section('classementGeneral')
+<div class="ImHereForSpace"></div>
+<div class="contentContainer">
+    <div class="subContainerClassement">
+        <p class="positionClassement">1</p>
+        <p class="teamNameClassement">Super Nom de team</p>
+        <p class="pointsClassement">45 pts</p>
+        <p class="moneyLeftClassement">25 €</p>
+    </div>
+</div>
+@endsection

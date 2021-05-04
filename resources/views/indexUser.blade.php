@@ -16,8 +16,8 @@
     <ul class="links">
         <li><a href="#actualites">Actualités</a></li>
         <li><a href="#classementGeneral">Classement général</a></li>
-        <li><a href="#meConnecter">Me connecter</a></li>
-        <li><a href="#participerAlAventure">Participer à l'Aventure</a></li>
+        <li><a href="#meConnecter">Mes défis</a></li>
+        <li><a href="#participerAlAventure">Mon compte</a></li>
     </ul>
     <label for="nav-toggle" class="icon-burger">
         <div class="line"></div>
@@ -26,7 +26,7 @@
     </label>
 </nav>
 
-@yield('actualites')
+@yield('homePage')
 
 <footer class="footer">
     <div class="container">

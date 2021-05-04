@@ -14,10 +14,11 @@
     <input id="nav-toggle" type="checkbox">
     <div class="logo"><strong>OTRAG</strong></div>
     <ul class="links">
-        <li><a href="#actualites">Gestion équipes</a></li>
-        <li><a href="#classementGeneral">Gestion sessions</a></li>
-        <li><a href="#meConnecter">Modifier mon Compte</a></li>
-        <li><a href="#meConnecter">Me déconnecter</a></li>
+        <li><a href="#actualites">Actualités</a></li>
+        <li><a href="#classementGeneral">Classement général</a></li>
+        <li><a href="#meConnecter">Mon équipe</a></li>
+        <li><a href="#participerAlAventure">Mes défis</a></li>
+        <li><a href="#participerAlAventure">Mon compte</a></li>
     </ul>
     <label for="nav-toggle" class="icon-burger">
         <div class="line"></div>
@@ -26,7 +27,7 @@
     </label>
 </nav>
 
-@yield('content')
+@yield('homePage')
 
 <footer class="footer">
     <div class="container">
@@ -34,10 +35,11 @@
             <div class="footer-col">
                 <h4>Liens</h4>
                 <ul>
-                    <li><a href="#">Gestion équipes</a></li>
-                    <li><a href="#">Gestion sessions</a></li>
-                    <li><a href="#">Modifier compte</a></li>
-                    <li><a href="#">Me déconnecter</a></li>
+                    <li><a href="#">Actualités</a></li>
+                    <li><a href="#">Classement général</a></li>
+                    <li><a href="#">Mon équipe</a></li>
+                    <li><a href="#">Mes défis</a></li>
+                    <li><a href="#">Mon compte</a></li>
                 </ul>
             </div>
             <div class="footer-col">
