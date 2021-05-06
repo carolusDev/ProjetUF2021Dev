@@ -26,7 +26,7 @@
     </label>
 </nav>
 
-@yield('inscription')
+@yield('gestionDefisChefUser')
 
 <footer class="footer">
     <div class="container">

@@ -118,19 +118,19 @@
             <form action="/my-handling-form-page" methode="post">
                 <div class="connexionEmailContainer">
                     <label class="labelConnexion">Prénom :</label>
-                    <input class="connexionInput" type="email" required/>
+                    <input class="connexionInput" type="text" required/>
                 </div>
+            </br>
+            <div class="connexionMotDePasseContainer">
+                <label class="labelConnexion">Nom :</label>
+                <input class="connexionInput" type="text" required/>
+            </div>
             </br>
                 <div class="connexionMotDePasseContainer">
                     <label class="labelConnexion">Civilité :</label>
-                    <input class="connexionInput" type="password" required/>
+                    <input class="connexionInput" type="text" required/>
                 </div>
                 </br>
-                <div class="connexionMotDePasseContainer">
-                    <label class="labelConnexion">Nom :</label>
-                    <input class="connexionInput" type="password" required/>
-                </div>
-            </br>
                 <div class="connexionMotDePasseContainer">
                     <label class="labelConnexion">Mot de passe :</label>
                     <input class="connexionInput" type="password" required/>
@@ -143,46 +143,219 @@
             </br>
                 <div class="connexionMotDePasseContainer">
                     <label class="labelConnexion">Date de naissance :</label>
-                    <input class="connexionInput" type="password" required/>
+                    <input class="connexionInput" type="date" required/>
                 </div>
             </br>
                 <div class="connexionMotDePasseContainer">
                     <label class="labelConnexion">Pays :</label>
-                    <input class="connexionInput" type="password" required/>
+                    <input class="connexionInput" type="text" required/>
                 </div>
             </br>
                 <div class="connexionMotDePasseContainer">
                     <label class="labelConnexion">Code postal :</label>
-                    <input class="connexionInput" type="password" required/>
+                    <input class="connexionInput" type="text" required/>
                 </div>
             </br>
                 <div class="connexionMotDePasseContainer">
                     <label class="labelConnexion">Ville :</label>
-                    <input class="connexionInput" type="password" required/>
+                    <input class="connexionInput" type="text" required/>
                 </div>
             </br>
                 <div class="connexionMotDePasseContainer">
                     <label class="labelConnexion">Numéro de téléphone :</label>
-                    <input class="connexionInput" type="password" required/>
+                    <input class="connexionInput" type="text" required/>
                 </div>
             </br>
                 <div class="connexionMotDePasseContainer">
                     <label class="labelConnexion">Adresse email :</label>
-                    <input class="connexionInput" type="password" required/>
+                    <input class="connexionInput" type="email" required/>
                 </div>
             </br>
                 <div class="connexionMotDePasseContainer">
                     <label class="labelConnexion">Confirmez email :</label>
-                    <input class="connexionInput" type="password" required/>
+                    <input class="connexionInput" type="email" required/>
                 </div>
             </br>
+        </br>
+        <div class="connexionMotDePasseContainer">
+            <label class="labelConnexion">être chef d'équipe :</label>
+            <input class="connexionInputCheckBox" type="checkbox" required/>
+        </div>
             <div class="boutonInscriptionContainer">
                 <input class="BoutonInscription" type="submit" value="envoyer"/>
             </div>
             </form>
             <div class="connexionPhotoContainerSmartphone">
-                <img class="connexionPictureSmartphone" src="img/pexels-janiere-fernandez-2829336.jpg" alt="on the road a game connexion picture"/>
+                <img class="connexionPictureSmartphone" src="img/pexels-lalu-fatoni-732632.jpg" alt="on the road a game connexion picture"/>
             </div>
+        </div>
+    </div>
+</div>
+@endsection
+
+
+
+@section('actualitesUser')
+<div class="ImHereForSpace"></div>
+<div class="contentContainer">
+    <div class="subContainerArticle">
+        <hr class="hrTextArticle" ></hr>
+            <div class="textContainerArticle">
+                <p class="textPresentation">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean sed adipiscing diam donec adipiscing tristique. Odio morbi quis commodo odio. Amet nisl suscipit adipiscing bibendum est ultricies integer. Feugiat vivamus at augue eget arcu dictum. Eu scelerisque felis imperdiet proin fermentum leo vel orci porta. Non consectetur a erat nam at. Dui nunc mattis enim ut tellus elementum sagittis vitae. Ullamcorper morbi tincidunt ornare massa. Neque egestas congue quisque egestas. Maecenas accumsan lacus vel facilisis volutpat est velit egestas.</p>
+            </div>
+        <hr class="hrTextArticle"></hr>
+    </div>
+</div>
+@endsection
+
+
+
+@section('gestionMembresChefUser')
+<div class="ImHereForSpace"></div>
+<div class="contentContainer">
+    <div class="subContentContainer">
+        <h2 class="titreGestionMembres" >Ajouter un membre :</h2>
+        <div class="connexionEmailContainer">
+            <label class="labelConnexion">Prénom :</label>
+            <input class="connexionInput" type="text" required/>
+        </div>
+    </br>
+    <div class="connexionMotDePasseContainer">
+        <label class="labelConnexion">Nom :</label>
+        <input class="connexionInput" type="text" required/>
+    </div>
+    </br>
+        <div class="connexionMotDePasseContainer">
+            <label class="labelConnexion">Date de naissance :</label>
+            <input class="connexionInput" type="date" required/>
+        </div>
+        <div class="boutonInscriptionContainer">
+            <input class="BoutonInscription" type="submit" value="envoyer Invitation"/>
+        </div>
+    </div>
+    <div class="subContentContainer">
+            <div class="textContainerArticle">
+                <h2 class="titreGestionMembres" >Membres actuels (X/3) :</h2>
+            </div>
+            <div class="membresActuels">
+                <ul>
+                <li class="membreListe">Beranguer Jonathan</li>
+                <li class="membreListe">Lévy Hélie de Mareuil</li>
+                <li class="membreListe">Charlemagne Clément</li>
+                </ul>
+            </div>
+            <div class="boutonInscriptionContainer">
+                <input class="BoutonInscription" type="submit" value="Supprimer équipe"/>
+            </div>
+    </div>
+</div>
+@endsection
+
+
+@section('modifierComptePerso')
+<div class="ImHereForSpace"></div>
+<div class="contentContainer">
+    <div class="subContainerConnexion">
+        <div class="connexionPhotoContainer">
+            <img class="connexionPicture" src="img/pexels-janiere-fernandez-2405095.jpg" alt="on the road a game connexion picture"/>
+        </div>
+        <div class="inputInscriptionContainer">
+            <form action="/my-handling-form-page" methode="post">
+                <div class="connexionEmailContainer">
+                    <label class="labelConnexion">Prénom :</label>
+                    <input class="connexionInput" type="text" required/>
+                </div>
+            </br>
+            <div class="connexionMotDePasseContainer">
+                <label class="labelConnexion">Nom :</label>
+                <input class="connexionInput" type="text" required/>
+            </div>
+            </br>
+                <div class="connexionMotDePasseContainer">
+                    <label class="labelConnexion">Civilité :</label>
+                    <input class="connexionInput" type="text" required/>
+                </div>
+                </br>
+                <div class="connexionMotDePasseContainer">
+                    <label class="labelConnexion">Mot de passe :</label>
+                    <input class="connexionInput" type="password" required/>
+                </div>
+            </br>
+                <div class="connexionMotDePasseContainer">
+                    <label class="labelConnexion">Confirmez mot de passe :</label>
+                    <input class="connexionInput" type="password" required/>
+                </div>
+            </br>
+                <div class="connexionMotDePasseContainer">
+                    <label class="labelConnexion">Date de naissance :</label>
+                    <input class="connexionInput" type="date" required/>
+                </div>
+            </br>
+                <div class="connexionMotDePasseContainer">
+                    <label class="labelConnexion">Pays :</label>
+                    <input class="connexionInput" type="text" required/>
+                </div>
+            </br>
+                <div class="connexionMotDePasseContainer">
+                    <label class="labelConnexion">Code postal :</label>
+                    <input class="connexionInput" type="text" required/>
+                </div>
+            </br>
+                <div class="connexionMotDePasseContainer">
+                    <label class="labelConnexion">Ville :</label>
+                    <input class="connexionInput" type="text" required/>
+                </div>
+            </br>
+                <div class="connexionMotDePasseContainer">
+                    <label class="labelConnexion">Numéro de téléphone :</label>
+                    <input class="connexionInput" type="text" required/>
+                </div>
+            </br>
+                <div class="connexionMotDePasseContainer">
+                    <label class="labelConnexion">Adresse email :</label>
+                    <input class="connexionInput" type="email" required/>
+                </div>
+            </br>
+                <div class="connexionMotDePasseContainer">
+                    <label class="labelConnexion">Confirmez email :</label>
+                    <input class="connexionInput" type="email" required/>
+                </div>
+            </br>
+        </br>
+            <div class="boutonInscriptionContainer">
+                <input class="BoutonInscription" type="submit" value="Valider changements"/>
+            </div>
+            </form>
+            <div class="connexionPhotoContainerSmartphone">
+                <img class="connexionPictureSmartphone" src="img/pexels-janiere-fernandez-2405095.jpg" alt="on the road a game connexion picture"/>
+            </div>
+        </div>
+    </div>
+</div>
+@endsection
+
+
+@section('gestionDefisChefUser')
+<div class="ImHereForSpaceChefUserGestion"></div>
+<div class="contentContainerDefisChefUser">
+    <div class="subContainerArticle">
+        <div class="subContainerGestionCHefUser">
+            <p class="positionClassement">N° : 1</p>
+            <p class="positionClassement">Nom défi : Le super premier défi !</p>
+            <p class="positionClassement">temps restant : 4H 20min 12s</p>
+            <p class="positionClassement">Points : X/3 pts</p>
+        </div>
+        <div class="textContainerArticle">
+            <p class="textPresentation">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean sed adipiscing diam donec adipiscing tristique. Odio morbi quis commodo odio. Amet nisl suscipit adipiscing bibendum est ultricies integer. Feugiat vivamus at augue eget arcu dictum. Eu scelerisque felis imperdiet proin fermentum leo vel orci porta. Non consectetur a erat nam at. Dui nunc mattis enim ut tellus elementum sagittis vitae. Ullamcorper morbi tincidunt ornare massa. Neque egestas congue quisque egestas. Maecenas accumsan lacus vel facilisis volutpat est velit egestas.</p>
+            <div class="defiPicturesContainer">
+                <img class="defisPictures" src="img/pexels-ylanite-koppens-697662.jpg" alt="on the road a game défi picture"/>
+                <img class="defisPictures" src="img/pexels-marius-venter-1659437.jpg" alt="on the road a game défi picture"/>
+                <img class="defisPictures" src="img/pexels-janiere-fernandez-2829336.jpg" alt="on the road a game défi picture"/>
+                <img class="defisPictures" src="img/pexels-janiere-fernandez-2405095.jpg" alt="on the road a game défi picture"/>
+            </div>
+        </div>
+        <div class="boutonInscriptionContainer">
+            <input class="BoutonInscription" type="submit" value="Ajouter élément(s)"/>
         </div>
     </div>
 </div>
