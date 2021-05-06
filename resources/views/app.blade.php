@@ -95,7 +95,7 @@
                         <input class="connexionInput" type="password" required/>
                     </div>
                     <div class="boutonInscriptionContainer">
-                        <input class="BoutonInscription" type="submit" value="envoyer"/>
+                        <input class="BoutonInscription" type="button" value="envoyer"/>
                     </div>
                 </form>
                 <div class="connexionPhotoContainerSmartphone">
@@ -182,7 +182,7 @@
             <input class="connexionInputCheckBox" type="checkbox" required/>
         </div>
             <div class="boutonInscriptionContainer">
-                <input class="BoutonInscription" type="submit" value="envoyer"/>
+                <input class="BoutonInscription" type="button" value="envoyer"/>
             </div>
             </form>
             <div class="connexionPhotoContainerSmartphone">
@@ -230,7 +230,7 @@
             <input class="connexionInput" type="date" required/>
         </div>
         <div class="boutonInscriptionContainer">
-            <input class="BoutonInscription" type="submit" value="envoyer Invitation"/>
+            <input class="BoutonInscription" type="button" value="envoyer Invitation"/>
         </div>
     </div>
     <div class="subContentContainer">
@@ -245,7 +245,7 @@
                 </ul>
             </div>
             <div class="boutonInscriptionContainer">
-                <input class="BoutonInscription" type="submit" value="Supprimer équipe"/>
+                <input class="BoutonInscription" type="button" value="Supprimer équipe"/>
             </div>
     </div>
 </div>
@@ -323,7 +323,7 @@
             </br>
         </br>
             <div class="boutonInscriptionContainer">
-                <input class="BoutonInscription" type="submit" value="Valider changements"/>
+                <input class="BoutonInscription" type="button" value="Valider changements"/>
             </div>
             </form>
             <div class="connexionPhotoContainerSmartphone">
@@ -355,7 +355,227 @@
             </div>
         </div>
         <div class="boutonInscriptionContainer">
-            <input class="BoutonInscription" type="submit" value="Ajouter élément(s)"/>
+            <input class="BoutonInscription" type="button" value="Ajouter élément(s)"/>
+        </div>
+    </div>
+</div>
+@endsection
+
+
+@section('menuDefisSessionsAdmin')
+<div class="ImHereForSpace"></div>
+<div class="contentContainer">
+    <div class="subContainerArticle">
+        <div class="boutonInscriptionContainer">
+            <input class="boutonMenuGestionAdmin" type="button" value="Ajouter des défis"/>
+        </div>
+        <div class="boutonInscriptionContainer">
+            <input class="boutonMenuGestionAdmin" type="button" value="Evaluer des défis"/>
+        </div>
+        <div class="boutonInscriptionContainer">
+            <input class="boutonMenuGestionAdmin" type="button" value="Création de sessions"/>
+        </div>
+    </div>
+</div>
+@endsection
+
+
+@section('gestionEquipe')
+<div class="ImHereForSpaceChefUserGestion"></div>
+<div class="contentContainerDefisChefUser">
+    <div class="subContainerArticle">
+        <div class="subContainerGestionCHefUser">
+            <p class="positionClassement">N° : 1</p>
+            <p class="positionClassement">Nom équipe : Le super premier défi !</p>
+            <input class="boutonEquipeSuppression" type="button" value="Supprimer équipe"/>
+        </div>
+        <div class="subContainerGestionEquipes">
+            <div class="chefEquipeNom">
+                <h2 class="nomChefEquipeLi">Chef d'équipe : XXXXX</h2>
+            </div>
+            <div class="equipierNomLi">
+                <p class="equipierLi">Equipier : XXXXX</p>
+            <div class="boutonsGestionEquipe">
+                <input class="boutonEquipeSuppression" type="button" value="Exclure de l'équipe"/>
+                <input class="boutonEquipeSuppression" type="button" value="Associer à une nouvelle équipe"/>
+            </div>
+            <hr class="separationEquipiers"></hr>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="boutonInscriptionContainer">
+    <input class="boutonMenuGestionAdmin" type="button" value="Valider toutes les équipes"/>
+</div>
+@endsection
+
+
+
+@section('gestionSessionAdmin')
+<div class="ImHereForSpace"></div>
+<div class="contentContainer">
+    <div class="subContentContainer">
+        <h2 class="titlePresentation">Création des sessions :</h2>
+        <div class="connexionEmailContainer">
+            <label class="labelConnexion">Dotation :</label>
+            <input class="connexionInput" type="text" required/>
+        </div>
+    </br>
+    <div class="connexionMotDePasseContainer">
+        <label class="labelConnexion">Date de début :</label>
+        <input class="connexionInput" type="text" required/>
+    </div>
+    </br>
+        <div class="connexionMotDePasseContainer">
+            <label class="labelConnexion">Date de fin :</label>
+            <input class="connexionInput" type="text" required/>
+        </div>
+        </br>
+        <div class="connexionMotDePasseContainer">
+            <label class="labelConnexion">Nom :</label>
+            <input class="connexionInput" type="text" required/>
+        </div>
+    </br>
+    <div class="boutonInscriptionContainer">
+        <input class="boutonMenuGestionAdmin" type="button" value="Sauvegarder"/>
+    </div>
+    </div>
+    <div class="subContentContainer">
+        <h2 class="titlePresentation">Liste des sessions :</h2>
+        <div class="listeSessions">
+            <p class="sessionLi">Session N°X</p>
+            <input class="boutonMenuGestionAdmin" type="button" value="Supprimer"/>
+            <hr class="separationEquipiers"></hr>
+        </div>
+    </div>
+</div>
+@endsection
+
+
+
+@section('creationDefisAdmin')
+<div class="ImHereForSpace"></div>
+<div class="contentContainer">
+    <div class="subContentContainer">
+        <h2 class="titlePresentation">Création des défis :</h2>
+        <div class="connexionEmailContainer">
+            <label class="labelConnexion">Nombre de points :</label>
+            <input class="connexionInput" type="text" required/>
+        </div>
+    </br>
+    <div class="connexionMotDePasseContainer">
+        <label class="labelConnexion">Titre :</label>
+        <input class="connexionInput" type="text" required/>
+    </div>
+    </br>
+        <div class="connexionMotDePasseContainer">
+            <label class="labelConnexion">Description :</label>
+            <textarea class="connexionInputArea" required></textarea>
+        </div>
+    </br>
+    <div class="boutonInscriptionContainer">
+        <input class="boutonMenuGestionAdmin" type="button" value="Importer image"/>
+    </div>
+    </div>
+    <div class="subContentContainer">
+        <h2 class="titlePresentation">Associer défi à la session :</h2>
+        <div class="connexionMotDePasseContainer">
+            <label class="labelConnexion">Nom session :</label>
+            <input class="connexionInput" type="text" required/>
+        </div>
+        <div class="boutonInscriptionContainer">
+            <input class="boutonMenuGestionAdmin" type="button" value="Sauvegarder changements"/>
+        </div>
+    </div>
+</div>
+@endsection
+
+
+@section('notationDefisAdmin')
+<div class="ImHereForSpaceChefUserGestion"></div>
+<div class="contentContainerDefisChefUser">
+    <div class="subContainerArticle">
+        <div class="subContainerGestionCHefUser">
+            <p class="positionClassement">N° : 1</p>
+            <p class="positionClassement">Nom défi : Le super premier défi !</p>
+            <div class="connexionMotDePasseContainer">
+                <label class="labelConnexion">Nombre de points / X :</label>
+                <input class="connexionInput" type="text" required/>
+            </div>
+        </div>
+        <div class="textContainerArticle">
+            <textarea class="connexionInputAreaFullWidth" required></textarea>
+        </div>
+        <div class="boutonInscriptionContainer">
+            <input class="BoutonInscription" type="button" value="Soumettre"/>
+        </div>
+    </div>
+</div>
+@endsection
+
+
+
+@section('gestionCompteAdmin')
+<div class="ImHereForSpace"></div>
+<div class="contentContainer">
+    <div class="subContainerConnexion">
+        <div class="connexionPhotoContainer">
+            <img class="connexionPicture" src="img/pexels-janiere-fernandez-2405095.jpg" alt="on the road a game connexion picture"/>
+        </div>
+        <div class="inputInscriptionContainer">
+            <form action="/my-handling-form-page" methode="post">
+                <div class="connexionMotDePasseContainer">
+                    <label class="labelConnexion">Numéro de téléphone :</label>
+                    <input class="connexionInput" type="text" value="Rechercher avec un N°" required/>
+                </div>
+            </br>
+                <div class="connexionEmailContainer">
+                    <label class="labelConnexion">Prénom :</label>
+                    <input class="connexionInput" type="text" required/>
+                </div>
+            </br>
+            <div class="connexionMotDePasseContainer">
+                <label class="labelConnexion">Nom :</label>
+                <input class="connexionInput" type="text" required/>
+            </div>
+            </br>
+                <div class="connexionMotDePasseContainer">
+                    <label class="labelConnexion">Civilité :</label>
+                    <input class="connexionInput" type="text" required/>
+                </div>
+                </br>
+                <div class="connexionMotDePasseContainer">
+                    <label class="labelConnexion">Date de naissance :</label>
+                    <input class="connexionInput" type="date" required/>
+                </div>
+            </br>
+                <div class="connexionMotDePasseContainer">
+                    <label class="labelConnexion">Pays :</label>
+                    <input class="connexionInput" type="text" required/>
+                </div>
+            </br>
+                <div class="connexionMotDePasseContainer">
+                    <label class="labelConnexion">Code postal :</label>
+                    <input class="connexionInput" type="text" required/>
+                </div>
+            </br>
+                <div class="connexionMotDePasseContainer">
+                    <label class="labelConnexion">Ville :</label>
+                    <input class="connexionInput" type="text" required/>
+                </div>
+            </br>
+            <div class="connexionMotDePasseContainer">
+                <label class="labelConnexion">Equipe :</label>
+                <input class="connexionInput" type="email" required/>
+            </div>
+        </br>
+            <div class="boutonInscriptionContainer">
+                <input class="BoutonInscription" type="button" value="Valider changements"/>
+            </div>
+            </form>
+            <div class="connexionPhotoContainerSmartphone">
+                <img class="connexionPictureSmartphone" src="img/pexels-janiere-fernandez-2405095.jpg" alt="on the road a game connexion picture"/>
+            </div>
         </div>
     </div>
 </div>

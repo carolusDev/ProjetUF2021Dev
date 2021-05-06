@@ -26,7 +26,7 @@
     </label>
 </nav>
 
-@yield('gestionDefisChefUser')
+@yield('gestionCompteAdmin')
 
 <footer class="footer">
     <div class="container">
