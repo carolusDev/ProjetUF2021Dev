@@ -18,6 +18,7 @@
         <li><a href="#classementGeneral">Classement général</a></li>
         <li><a href="#meConnecter">Mon équipe</a></li>
         <li><a href="#participerAlAventure">Mes défis</a></li>
+        <li><a href="#meConnecter">Me déconnecter</a></li>
         <li><a href="#participerAlAventure">Mon compte</a></li>
     </ul>
     <label for="nav-toggle" class="icon-burger">
